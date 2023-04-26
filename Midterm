@@ -112,7 +112,12 @@ Q9.) The data type: Animal
     }
     
     
- Q16.) 
+ Q16.) First I would tell Jerry that there is not enough test cases to assume that the bubble sort method is correct. From 
+ our lecture, it is possible that if you have the 'largest' integer at say index 3, then a smaller integer at index 4, than a
+ larger integer at index 5 (larger than index 3), the bubble sort method could not compare the last index with the technically 
+ 'largest' integer at  index 3.
+ 
+ Q17.) 
  
  
  
