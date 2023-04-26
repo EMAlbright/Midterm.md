@@ -40,7 +40,7 @@ Q9.) The data type: Animal
  a much faster or more efficient time complexity.
  
  Q12.)  public static boolean isSymmetrical(int[] data) {
-        if(data.length == 0 || data == null){
+        if(data == null || data.length == 0){
             return true;
         }
 
@@ -135,11 +135,51 @@ Q9.) The data type: Animal
        @Override overrides a method from the parent class. If there is none in parent class, than removing @Override
        does not do anything. If there is a toString() in the parent class, than the parent class method is executed.
  
- Q20.) If the input arrays length is 0 or null than the method returns -1. findSomething uses a for loop to iterate
+ Q20.) a.) If the input arrays length is 0 or null than the method returns -1. findSomething uses a for loop to iterate
        through each element of input array and compares integer value at idx to current value at i, and returns the element 
        where the smallest integer is held.
        
-  Extra Credit 1:
+           (Used GPT to find this issue)
+       b.) Since the if statement checks if the length is 0 before if the input is null, which will result in NullPointerException.
+       To fix this issue, you should place input == null before input.length == 0
+       
+      c.) int[][] inputs = {
+                {},
+                {1, 2, 3, 4, -1},
+                {5, 4, 8, 10},
+        };
+
+        int[][] expects = {
+                {-1},
+                {4},
+                {1},
+        };
+        
+        
+      d.)   public static int findSomething(final int[] input) {
+      
+        if (input.length == 0 || input == null) {
+            return -1;
+        }
+
+        int idx = 0;
+        if(input.length % 2 == 0) {
+          for (int i = 1; i < input.length; i++) {
+            if (input[idx] > input[i]) {
+                idx = i;
+            }
+        }
+        return idx;
+       }
+       return idx;
+    }
+  
+  Q21.) (Got information from Stackoverflow)
+         Private variables can obly be accessed from within that class. However, protected variables can be seen by subclasses
+         of that certain class. So, in our lecture when we used Animal class would could access these protected variables
+         from our subclasses (or child classes) Cat, Dog, Rabbit, etc.
+       
+  Extra Credit 1: I would reply by saying that
    
   Extra Credit 2: Fast and Furious was mentioned because at the end when Paul Walker and Vin Diesel drive off,
                   one of them goes linearly and the other goes on a slight curve. This represents the Big O of
