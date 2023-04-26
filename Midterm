@@ -27,4 +27,74 @@ Q9.) The data type: Animal
           pets[i].sleep();
      }
  
- Q10.)
+ Q10.) The 'abstract' word is necessary to create an outline of parent class methods for our child classes MovieAction
+       and MovieComedy. Then, we used the keyword 'Super' to call the constructors from the abstract parent class
+       Movie.
+       
+ Q11.) Binary search cuts the number of elements in half after each iteration. 
+ Since the array is assumed to be sorted, the target number is either greater or smaller everytime. 
+ The Linear search checks every element until target number is found. So, the worst case for binary search is O(log n) 
+ (found online the time complexity of binary) while linear search is O(n) (linear time complexity). 
+ For example, if an array has 100 elements, linear search would take at worst 100 iterations. However,
+ Binary search would take at worst ~6.5 iterations. So, binary search is much better at handling large arrays and has
+ a much faster or more efficient time complexity.
+ 
+ Q12.) public static boolean isAsymmetrical(int[] data){
+        if(data.length == 0 || data == null){
+            return true;
+        }
+        if(data.length == 1){
+            return false;
+        }
+
+        int last = data.length - 1;
+        int middle = data.length / 2;
+
+        for(int i = 0; i < middle; i++){
+            if(data[i] != data[last - i]){
+                return true;
+            }
+        }
+        return false;
+    }
+    
+    
+ Q13.) (Wrote this test last night from the sample midterm so I have it in full)
+          
+        @Test
+    public void testInputs() {
+        int[][] inputs = {
+                {1, 2, 3, 2, 1},
+                {1, 2, 3, 4},
+                {3},
+                {3, 3},
+                {8, 2, 3, 3, 2, 8},
+                {2, 3},
+                {1, 2, 3, 3, 1},
+        };
+
+        boolean[][] expects = {
+                {false},
+                {true},
+                {false},
+                {false},
+                {false},
+                {true},
+                {true},
+        };
+
+        for(int i = 0; i < inputs.length; i++) {
+            boolean actual = isAsymmetrical(inputs[i]);
+            assertEquals(expects[i][0], actual);
+        }
+
+    }
+ 
+ 
+ Q14.) 
+ 
+ 
+ 
+ 
+ 
+ 
