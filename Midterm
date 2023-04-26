@@ -176,7 +176,11 @@ Q9.) The data type: Animal
         if (input.length == 0 || input == null) {
             return -1;
         }
-
+         
+         if(input.length % 2 == 1) {
+               return -1;
+             }
+         
         int idx = 0;
         if(input.length % 2 == 0) {
           for (int i = 1; i < input.length; i++) {
