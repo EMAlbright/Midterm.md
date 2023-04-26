@@ -39,31 +39,31 @@ Q9.) The data type: Animal
  Binary search would take at worst ~6.5 iterations. So, binary search is much better at handling large arrays and has
  a much faster or more efficient time complexity.
  
- Q12.) public static boolean isAsymmetrical(int[] data){
+ Q12.)  public static boolean isSymmetrical(int[] data) {
         if(data.length == 0 || data == null){
             return true;
         }
+
         if(data.length == 1){
-            return false;
+            return true;
         }
 
         int last = data.length - 1;
         int middle = data.length / 2;
 
-        for(int i = 0; i < middle; i++){
-            if(data[i] != data[last - i]){
-                return true;
+        for (int i = 0; i < middle; i++) {
+            if (data[i] != data[last - i]) {
+                return false;
             }
         }
-        return false;
+        return true;
     }
     
     
- Q13.) (Wrote this test last night from the sample midterm so I have it in full)
-          
-        @Test
+ Q13.) @Test
     public void testInputs() {
         int[][] inputs = {
+                {},
                 {1, 2, 3, 2, 1},
                 {1, 2, 3, 4},
                 {3},
@@ -74,23 +74,23 @@ Q9.) The data type: Animal
         };
 
         boolean[][] expects = {
-                {false},
                 {true},
-                {false},
-                {false},
+                {true},
                 {false},
                 {true},
                 {true},
+                {true},
+                {false},
+                {false},
         };
 
         for(int i = 0; i < inputs.length; i++) {
-            boolean actual = isAsymmetrical(inputs[i]);
+            boolean actual = isSymmetrical(inputs[i]);
             assertEquals(expects[i][0], actual);
         }
 
     }
- 
- 
+          
  Q14.) (Used StackOverflow):
         A new arrayList is created and the old data is copied over to the new ArrayList which has a greater capacity.
         
