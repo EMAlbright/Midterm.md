@@ -119,7 +119,22 @@ Q9.) The data type: Animal
  
  Q17.) 
  
- 
+     a.) I would choose an Array as the question above at the beginning, we can access a value-indexed array at a time 
+         complexity of O(1), and a sorted array at time complexity O(logn). While, searching a sorted or unsorted linked list 
+         (got this information from StackOverflow) is O(n). Therefore, since an enormous data base like social media usernames,
+         eitherway a fixed time complexity or O(logn) would be faster than a linear time complexity of O(n).
+         
+     b.) The downsiding of using an array for new users is that you have to create or resize the array, you must completely
+         create a new array. Of course, this takes up more memory and can storing that enormous amount of data takes a lot
+         of time and energy which costs in turn costs more energy and therefore money. On the otherhand, linked lists do not
+         have to create a completely new array and store that memory somewhere. Using the .add we can increase the size of the
+         linked list which would be more efficient than allocating memory and copying over the array like we would with a
+         primitive array.
+         
+         c.) If we had a system where usernames were stored in linked lists (so we can add and remove usernames more efficiently),
+         while using an array to locate them (quicker and more productively). I think we could use a loop that constantly
+         keeps track of new users being added, therefore adding to the linked list at i count. We could also possibly use that
+         information from the for loop to quickly access elements (usernames) from within the array.
  
  
  Q18.) No, the minimum amount of time that is possible is 27 minutes, so they cannot cross. First, A and B (the two fastest)
