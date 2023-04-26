@@ -122,5 +122,26 @@ Q9.) The data type: Animal
  
  
  
+ Q18.) No, the minimum amount of time that is possible is 27 minutes, so they cannot cross. First, A and B (the two fastest)
+ would cross the bridge (total = 2 min). Then, A would come back (total = 3 min). Next, C and D (two slowest) would cross
+ (total = 23 minutes). Then, B would come back (total = 25 minutes). Finally, A and B would come back across (total = 27 mintues).
+ Even if A stayed originally and B came back instead of A, the total would still be 27 minutes.
  
+ 
+ Q19.) The toString() function return a string of data from a name card object. Even if the toString() method is removed
+       there would be a default toString() built in when trying to print a name card object.
+       
+       (Found from StackOverflow)
+       @Override overrides a method from the parent class. If there is none in parent class, than removing @Override
+       does not do anything. If there is a toString() in the parent class, than the parent class method is executed.
+ 
+ Q20.) If the input arrays length is 0 or null than the method returns -1. findSomething uses a for loop to iterate
+       through each element of input array and compares integer value at idx to current value at i, and returns the element 
+       where the smallest integer is held.
+       
+  Extra Credit 1:
+   
+  Extra Credit 2: Fast and Furious was mentioned because at the end when Paul Walker and Vin Diesel drive off,
+                  one of them goes linearly and the other goes on a slight curve. This represents the Big O of
+                  O(n) and I believe the curve is O(n^2). And that they will never see each other again :(
  
