@@ -194,7 +194,12 @@ Q9.) The data type: Animal
          of that certain class. So, in our lecture when we used Animal class would could access these protected variables
          from our subclasses (or child classes) Cat, Dog, Rabbit, etc.
        
-  Extra Credit 1: I would reply by saying that
+  Extra Credit 1: I would reply by saying that testing is an essential part of coding. Scrutinizing every detail of your code
+                  is important to ensure it does what the codes purpose is. Without testing your code, you can never know
+                  that it works properly. Even if you have a limited amount of tests, you should think of and implement
+                  every possible input that your code could take in to understand the code from all different perspectives. 
+                  Then, most likely, your code will fail and you must debug by stepping into, and over each lines and track
+                  what your method does at every line.
    
   Extra Credit 2: Fast and Furious was mentioned because at the end when Paul Walker and Vin Diesel drive off,
                   one of them goes linearly and the other goes on a slight curve. This represents the Big O of
