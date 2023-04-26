@@ -19,6 +19,12 @@ Q7.) These 2 methods are overloaded. This is because when a method is overriding
      takes in 2 doubles.
 
 
+Q8.) Super calls the constructor that is defined in the parent class of Cat.
 
-
-Q8.
+Q9.) The data type: Animal
+        
+     for(int i = 0; i < pets.length; i++) {
+          pets[i].sleep();
+     }
+ 
+ Q10.)
