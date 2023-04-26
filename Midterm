@@ -1,37 +1,22 @@
 
-Q1.
+Q1.) C
 
+Q2.) A
 
+Q3.) E
 
+Q4.) B
 
-Q2.
+Q5.) B
 
+Q6.) foo(10.0, 20.5) = 30.5
+     foo(3, 4) = 13
+     foo(8, 3.0) = An error since one method takes two integers and the other method takes two doubles. However,
+     there is no argument for an integer and then a double.
 
-
-
-Q3.
-
-
-
-
-Q4.
-
-
-
-
-Q5.
-
-
-
-
-
-Q6.
-
-
-
-
-
-Q7.
+Q7.) These 2 methods are overloaded. This is because when a method is overriding another method, they have the same 
+     method signature. In the two methods above, the top method 'foo' takes in 2 integers while the bottom method 'foo'
+     takes in 2 doubles.
 
 
 
